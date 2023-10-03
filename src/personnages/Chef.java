@@ -18,7 +18,7 @@ public class Chef {
 		return nom;
 	}
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "«" + texte + "»");
+		System.out.println(prendreParole() + "'" + texte + "'");
 	}
 	private String prendreParole() {
 		return "Le chef " + nom + "du village " + village.getNom() + " : ";

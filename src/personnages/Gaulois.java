@@ -13,7 +13,7 @@ public class Gaulois {
 		return nom;
 	}
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "«" + texte + "»");
+		System.out.println(prendreParole() + "'" + texte + "'");
 	}
 	private String prendreParole() {
 		return "Le gaulois " + nom + " : ";
@@ -27,7 +27,7 @@ public class Gaulois {
 	}	
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
-		parler(" Merci Druide, je sens que ma force est " + effetPotion + " fois décuplée si la force de la potion est de " + effetPotion);
+		parler(" Merci Druide, je sens que ma force est " + effetPotion + " fois dï¿½cuplï¿½e si la force de la potion est de " + effetPotion);
 	}
 	
 	public static void main(String[] args) {
@@ -37,5 +37,6 @@ public class Gaulois {
 		asterix.boirePotion(pot);
 		Romain romain1 = new Romain("sinus",4);
 		asterix.frapper(romain1);
+		asterix.parler("ouais");
 	}
 }
